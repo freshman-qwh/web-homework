@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+ 	<head>
+		<meta charset="UTF-8">
+		<title >大鸟转转转相亲网站</title>
+	</head>
+	<style type="text/css">
+		*{   
+			margin: 0;
+			padding: 0;
+		}
+		body{
+            position: relative;     /*为下面的absolute提供父元素定位*/
+            height: 1200px;       /*此可以预先设置你需要做的网站的高度，也可以不用设置，但需要一定的内容支撑*/
+        }
+        #box1:before{               /*使用before 选择器在被选元素的内容前面插入内容。*/
+            width: 100%;
+            height: 100%;           /*设置为全屏背景模式*/
+            background-image: url(love.jpg);
+            background-size: 100% 100%  ;
+            background-attachment: fixed;      /*将图片固定*/
+            position: absolute;                 /*图片定位*/
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: -1;                    /*设置该标签等级，让其始终位于最上层*/
+            -webkit-filter: opacity(50%);   /*设置透明度   blur还可以改变照片的模糊度*/
+            filter: opacity(50%);
+        }
+        .box2{
+
+        }
+		</style>
+	<body>
+		<div id="box1">
+			<div class="box2">
+				<div style="font-size:60px; font-weight: 900;">-缘由心生-</div>
+				<br>
+				<hr/>
+				<table width=100%  rules="cols" height="40px">
+						<tr align="center" style="font-weight: 700; font-size: large;">
+							<td bgcolor="pink"><a  href="http://www.a.com/register.html" >登录/注册</a></td>
+							<td bgcolor="pink"><a  href="http://www.a.com/space.html" >个人中心</a></td>
+							<td bgcolor="pink"><a  href="http://www.a.com/recharge.html" >会员充值</a></td>
+							<td bgcolor="pink"><a  href="http://www.a.com/about.html" >关于我们</a></td>
+							<td bgcolor="pink"><a  href="https://www.baihe.com/" >其他网站</a></td>
+						</tr>
+				</table>
+				<br><br>
+				<p align="center">人生自是有情痴,此恨无关风与月。</p>
+			</div>
+		</div>
+	</body>
+</html>
+

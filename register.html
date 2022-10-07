@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>注册页面</title>
+		<meta charset="utf-8">
+	</head>
+	<style>
+		.top {
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(44, 188, 255);
+        text-align: center;
+		font-size: 2rem;
+		font-weight: bolder;
+    	}
+		.register_btn {
+        width: 20%;
+        background: rgb(44, 188, 255);
+        color: white;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+        font-size: 1.25rem;
+		}
+	</style>
+	<body>
+			<div class="top"><p>用户注册界面</p></div>
+			<!--<h1 style="margin-bottom:0;text-align:center;">用户注册界面</h1><br />-->
+			<a href="http://www.a.com/main.html">&lt返回</a>
+			<div id="content" style="text-align: center;">
+				<a href="http://www.a.com/login.html">已有帐号,直接登录</a><br /><br />
+				用户名:<input name = "username"type = "text"><br /><br />
+				手机号:<input name = "phone"type = "text"><br /><br />
+				<!--头像上传<input type="file" name="photos"><br />-->
+				
+				密码:<input name = "passwd1" type="password"><br /><br />
+
+				性别:<input name = "sex" value = "0" type = "radio" >男
+					<input name = "sex" value = "1" type = "radio" >女
+					<input name = "sex" value = "2" type = "radio" checked = "checked">保密<br /><br />
+
+				爱好:<input name = "hobby" type = "checkbox" value="男">男
+					<input name = "hobby" type = "checkbox" value="女">女
+					<input name = "hobby" type = "checkbox" value="非人类">非人类<br /><br />
+
+				出生日期:<input type="date" name="bdaymonth"><br /><br />
+
+				<textarea name="wenben">
+					协议：保证年满18周岁，真心寻找另一半，并且确认以上信息填写无误。
+				</textarea>
+				<br />
+				<input name = "agree" type="checkbox" value="同意以上服务协议">同意以上服务协议<br /><br />
+				<a href="http://www.a.com/main.html">
+					<div style="margin:0 auto" class="register_btn" @click="login">注册并登录</div>
+				</a>
+			</div>	
+	</body>
+</html>
