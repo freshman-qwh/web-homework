@@ -1,0 +1,42 @@
+*{   
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('../font/webfont.eot'); /* IE9 */
+    src: url('../font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/webfont.woff2') format('woff2'),
+    url('../font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+.web-font {
+    font-family: "webfont" !important;
+    font-size: 48px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    position: relative;     /*为下面的absolute提供父元素定位*/
+    height: 1200px;       /*此可以预先设置你需要做的网站的高度，也可以不用设置，但需要一定的内容支撑*/
+}
+#box1:before{               /*使用before 选择器在被选元素的内容前面插入内容。*/
+    width: 100%;
+    height: 100%;           /*设置为全屏背景模式*/
+    background-image: url(../image/love.jpg);
+    background-size: 100% 100%  ;
+    background-attachment: fixed;      /*将图片固定*/
+    position: absolute;                 /*图片定位*/
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;                    /*设置该标签等级，让其始终位于最上层*/
+    -webkit-filter: opacity(50%);   /*设置透明度   blur还可以改变照片的模糊度*/
+    filter: opacity(50%);
+}
+.box2{
+
+}
