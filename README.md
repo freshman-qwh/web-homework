@@ -20,8 +20,11 @@ git方法：
 8、然后第一次上传就完成了。
 9、后续上传的话一般重复3、4步，还需要额外git pull origin master，再执行第7步。
 
+git push origin master报错unable to access参照https://blog.csdn.net/m0_66695483/article/details/125036055
+执行git config --global --unset http.proxy
+执行git config --global --unset https.proxy
 
-参考：https://blog.csdn.net/u011332271/article/details/105320697
+详细参考：https://blog.csdn.net/u011332271/article/details/105320697
       https://blog.csdn.net/weixin_53072519/article/details/122824860
 
 遇到问题自行百度
