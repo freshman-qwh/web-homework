@@ -20,8 +20,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body{
-    position: relative;     /*为下面的absolute提供父元素定位*/
-    height: 1200px;       /*此可以预先设置你需要做的网站的高度，也可以不用设置，但需要一定的内容支撑*/
+    position: relative;
+    height: 1200px;
 }
 #box1:before{               /*使用before 选择器在被选元素的内容前面插入内容。*/
     width: 100%;
@@ -29,7 +29,7 @@ body{
     background-image: url(../image/love.jpg);
     background-size: 100% 100%  ;
     background-attachment: fixed;      /*将图片固定*/
-    position: absolute;                 /*图片定位*/
+    position: fixed;                 /*图片定位*/
     top: 0;
     left: 0;
     content: "";
@@ -39,4 +39,47 @@ body{
 }
 .box2{
 
+}
+
+.top,.bottom{
+    width: 100%;
+    height: 150px;
+}
+.middle{
+    width: 100%;
+    height: 900px;
+}
+.left,.right{
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+.center{
+    width: calc(100% - 400px);
+    height: 100%;
+    float: left;
+}
+.tittle{
+    margin-left: 20%;
+    width: 60%;
+    height: 100px;
+    float: left;
+}
+.music{
+    width: 20%;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+}
+.navigation{
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+.navigation a:link, a:visited{     /* 未访问链接*//*已访问链接 */
+    color: red;
+    text-decoration:none;
+}
+.navigation a:hover, a:active{    /* 鼠标移动到链接上 *//* 鼠标点击时 */
+    color: blue;
 }
