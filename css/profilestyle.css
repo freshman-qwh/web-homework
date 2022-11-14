@@ -1,0 +1,77 @@
+*{   
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    position: relative;
+    height: 100%;
+}
+.top,.bottom{
+    width: 100%;
+    height: 15%;
+    background: grey;
+}
+.middle{
+    width: 100%;
+    height: 70%;
+}
+.left,.right{
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.center{
+    width: 70%;
+    height: 100%;
+    background: blue;
+    float: left;
+}
+
+.item1 { grid-area: name; }
+.item2 { grid-area: sex; }
+.item3 { grid-area: old; }
+.item4 { grid-area: resident; }
+.item5 { grid-area: src; }
+.item6 { grid-area: height; }
+.item7 { grid-area: weight; }
+.item8 { grid-area: favorite; }
+.item9 { grid-area: signature; }
+.item10 { grid-area: more; }
+
+.grid-profile{
+    display: grid;
+    grid:
+    'name name sex old src'
+    'resident resident height weight src'
+    'favorite favorite favorite favorite src'
+    'signature signature signature signature signature'
+    'more more more more more';
+    grid-gap: 3px;
+    background-color: black;
+    padding: 6px 8px;
+}
+.grid-profile div{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.item5 img{
+    width: 350px;
+    height: 200px;
+    /*object-fit: fill;*/
+    padding-left: 5%;
+    overflow: hidden;
+}
+.item1, .item2, .item3, .item4, .item6, .item7, .item8, .item9{
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 25px;
+}
+.item10{
+    height: 190px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+}
