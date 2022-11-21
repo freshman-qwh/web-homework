@@ -1,0 +1,3 @@
+2022/11/13 美化main主页与detail详情页，美化了导航栏
+2022/11/17 用css优化了register页面布局
+2022/11/19 增加了register页面的js.validate的判断
