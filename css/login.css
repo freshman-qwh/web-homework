@@ -1,0 +1,105 @@
+/*登录表单的各种属性*/
+#loginForm table:first-of-type{
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 120px auto 0 auto;
+}
+#loginForm table:first-of-type tr:nth-of-type(-n + 2) td{
+    height: 70px;
+}
+#loginForm .label{
+    height: 70px;
+    width: 70px;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 700;
+}
+#loginForm input{
+    height: 40px;
+    width: 280px;
+    font-size: 22px;
+}
+/*登录按钮的交互*/
+#login_btn{
+    width: 260px;
+    height: 60px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 50px auto 0 auto;
+}
+#login_btn:hover{
+    width: 260px;
+    height: 60px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 50px auto 0 auto;
+    box-shadow: 5px 5px 5px black;
+}
+#login_btn:active{
+    width: 260px;
+    height: 60px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 55px auto -5px auto;
+    box-shadow: 2px 2px 2px black;
+}
+/*注册按钮的交互*/
+#Toregister_btn{
+    width: 260px;
+    height: 60px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 50px auto 0 auto;
+}
+#Toregister_btn:hover{
+    width: 260px;
+    height: 60px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 50px auto 0 auto;
+    box-shadow: 5px 5px 5px black;
+}
+#Toregister_btn:active{
+    width: 260px;
+    height: 60px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    margin: 55px auto 0 auto;
+    box-shadow: 2px 2px 2px black;
+}
+/*提醒去注册*/
+#tip{
+    width: 260px;
+    font-size: small;
+    font-weight: 700;
+    color: blue;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a{text-decoration:none;}

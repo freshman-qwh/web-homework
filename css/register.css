@@ -1,0 +1,73 @@
+/*注册表单的各种属性*/
+#registerForm{
+    color: black;
+}
+#registerForm table:first-of-type{
+    margin: 20px auto;
+}
+#registerForm table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+#registerForm table:first-of-type tr:nth-of-type(-n + 4) td{
+    height: 50px;
+}
+#registerForm table:first-of-type tr:nth-of-type(+n + 5):nth-of-type(-n + 6) td{
+    height: auto;
+}
+#registerForm .label{
+    height: 50px;
+    width: 125px;
+    padding-left: 120px;
+    padding-right: 10px;
+    text-align: right;
+}
+/*用于打印jquery.validate的错误*/
+#registerForm .status{
+    width: 200px;
+    padding-left: 10px;
+}
+/*注册按钮的交互*/
+#register_btn{
+    width: 260px;
+    height: 50px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 20px auto;
+}
+#register_btn:hover{
+    width: 260px;
+    height: 50px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px black;
+}
+#register_btn:active{
+    width: 260px;
+    height: 50px;
+    background: #cc354c;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 25px auto;
+    box-shadow: 2px 2px 2px black;
+}
+
+a{text-decoration:none;}
+
+/*jquery.validate错误信息的属性*/
+.error{
+    color:blue;
+    font-weight: bolder;
+}

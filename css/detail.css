@@ -7,7 +7,12 @@
 .top,.bottom{
     width: 100%;
     height: 150px;
-    background-color: var(--background-color);
+}
+.top{
+    background-color: #cc354c;;
+}
+.bottm{
+    background-color: var(--background-color); /*这个颜色在navigation.css的root里*/
 }
 .middle{
     width: 100%;
