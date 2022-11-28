@@ -129,6 +129,7 @@
 								<td>
 									<label style="font-size: 15px;">最终解释权归网页创建者所有。</label>
 								</td>
+								<td class="status"></td>
 							</tr>
 							<tr>
 								<td></td>
@@ -152,17 +153,37 @@
 		</div>
 		</div>	
 	</body>
-	<!-- <script>
-		$(document).ready(function(){
-			$("#register_btn").click(function(){
-				var zhanghao = $("#account").val();
-				var password = $("#psw1").val();
-				$.cookie('psw', psw1, { expires: 7 });  // 创建cookie, 7天后过期
-				psw=$.cookie('psw');     // 读取cookie
-				console.log("psw=" + psw);
-				//$.removeCookie('name');		// 删除cookie
-			});
-		});
-	</script> -->
+	<script>
+		// $(document).ready(function(){
+		// 	if(window.localStorage.userArr){//判断是否存在
+		// 		var array = JSON.parse(window.localStorage.userArr);
+		// 	}
+		// 	else{
+		// 		array = [];//创建一个新数组
+		// 	}
+		// 	$("#register_btn").click(function(){
+		// 		if($("#registerForm").valid()){
+		// 			var account = $("#account").val();
+		// 			var password = $("#psw1").val();
+		// 			for(var i = 0; i < array.length; i++){
+		// 				//判断是否有相同账号
+		// 				if(account == array[i].username){
+		// 					alert("该账号已存在");
+		// 					return;
+		// 				}
+		// 			}
+		// 			//创建对象
+		// 			var obj = {username:username,password:password,score:0}
+		// 			array.push(obj);
+		// 			window.localStorage.userArr=JSON.stringify(array);
+		// 			alert("用户创建成功")
+		// 			// $.cookie('psw', psw1, { expires: 7 });  // 创建cookie, 7天后过期
+		// 			// psw=$.cookie('psw');     // 读取cookie
+		// 			// console.log("psw=" + psw);
+		// 			//$.removeCookie('name');		// 删除cookie
+		// 		}
+		// 	});
+		// });
+	</script>
 
 </html>
