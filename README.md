@@ -23,6 +23,11 @@ git方法：
 git push origin master报错unable to access参照https://blog.csdn.net/m0_66695483/article/details/125036055
 执行git config --global --unset http.proxy
 执行git config --global --unset https.proxy
+如果有OpenSSL错误字样先运行如下命令关闭那个报错：
+git config --global http.sslVerify "false"
+git config --global https.sslVerify "false"
+上述都不行去使用win+R打开cmd，输入ipconfig /flushdns刷新一下dns
+多试试总会push成功的（折磨）
 
 详细参考：https://blog.csdn.net/u011332271/article/details/105320697
       https://blog.csdn.net/weixin_53072519/article/details/122824860
