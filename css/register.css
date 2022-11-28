@@ -69,5 +69,4 @@ a{text-decoration:none;}
 /*jquery.validate错误信息的属性*/
 .error{
     color:blue;
-    font-weight: bolder;
 }
