@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 		<script src="https://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+        <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+		<script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
 	    <title>登录页面</title>
     </head>
 
@@ -33,14 +35,16 @@
                                 <td>
                                     <input id="account" name="account" type="text" maxlength="18" placeholder="请输入您的账号">
                                 </td>
+                                <td class="status"></td>
                             </tr>
                             <tr>
                                 <td class="label">
-                                    <label for="psw1">密码:</label>
+                                    <label for="psw">密码:</label>
                                 </td>
                                 <td>
-                                    <input id="psw1" name="psw1" type="password" maxlength="18" placeholder="请输入您的密码">
+                                    <input id="psw" name="psw" type="password" maxlength="18" placeholder="请输入您的密码">
                                 </td>
+                                <td class="status"></td>
                             </tr>
                         </table>
                     </form>
@@ -60,12 +64,17 @@
         </div>
 	</body>
 
-    <!-- <script>
+    <script>
+    //cookie记住密码https://www.lmlphp.com/user/63287/article/item/2027000/
     $(document).ready(function(){
-        $.cookie("like", 123);  // 创建cookie, 7天后过期
-        name = $.cookie("like");     // 读取cookie
-        $.removeCookie("like");		// 删除cookie
-        console.log(name)
-    });
-    </script> -->
+        $("#login_btn").click(function(){
+            if($("#loginForm").valid()){
+                $("#loginForm").submit();
+            }
+            else{
+                return false;
+            }
+        });
+    });	
+    </script>
 </html>
