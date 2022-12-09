@@ -1,0 +1,53 @@
+/* 弹窗 (background) */
+.bg{
+    position: fixed;
+    z-index: 2; 
+    padding-top: 20%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+/* 弹窗内容 */
+.popup {
+    position: fixed;
+    z-index: 3; 
+    background-color: #fefefe;
+    top: -200px;                    /*配合js动画，不要动画的话为0*/
+    left: 0;
+    margin: 180px 15%;
+    opacity: 0;                     /*透明度0*/
+    border: 1px solid #888;
+    height: 460px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.popup-content {}
+/* 关闭按钮 */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: left;
+}
+.popup-body {padding: 2px 16px;}
+.popup-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: left;
+}
