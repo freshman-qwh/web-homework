@@ -2,107 +2,108 @@
 	margin: 0;
 	padding: 0;
 }
+@media screen and (min-width:800px){
+    /*整体布局*/
+    .top,.bottom{
+        width: 100%;
+        height: 150px;
+    }
+    .top{
+        background-color: #cc354c;
+    }
+    .bottom{
+        background-color: #393c42;
+    }
+    .middle{
+        width: 100%;
+        height:auto;
+    }
+    .thetitle{
+        width: 100%;
+        height: 100px;
+    }
 
-/*整体布局*/
-.top,.bottom{
-    width: 100%;
-    height: 150px;
-}
-.top{
-    background-color: #cc354c;;
-}
-.bottm{
-    background-color: var(--background-color); /*这个颜色在navigation.css的root里*/
-}
-.middle{
-    width: 100%;
-    height:auto;
-}
-.thetitle{
-    width: 100%;
-    height: 100px;
-}
 
+    /*列表布局*/
+    .content{
+        width: 66%;
+        margin: 50px auto;
+        background: #eee;
+        position: relative;
+    }
 
-/*列表布局*/
-.content{
-    width: 1000px;
-    margin: 50px auto;
-    background: #eee;
-    position: relative;
-}
+    .title-bar{
+        height: 80px;
+        background: #1a69e8;
+        position: relative;
+    }
+    .title-name, .title-type{
+        position: absolute;
+        left: 24px;
+        color: white
+    }
+    .title-name{
+        top: 12px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .title-type{
+        top: 40px;
+        font-size: 12px;
+    }
 
-.title-bar{
-    height: 80px;
-    background: #1a69e8;
-    position: relative;
-}
-.title-name, .title-type{
-    position: absolute;
-    left: 24px;
-    color: white
-}
-.title-name{
-    top: 12px;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-.title-type{
-    top: 40px;
-    font-size: 12px;
-}
+    .tb{
+        float:left;
+        padding: 15px;
+        width: 266px;
+        background-color: #fbf9fa;
+        margin: 5px 12px;
+        height: 400px;
+    }
+    .tb-head{
+        overflow: hidden
+    }
+    .tb-head img{
+        width: 266px;
+        height: 177px;
+    }
+    .tb-line{
+        padding: 17px 0;
+        border-bottom: 1px solid #D8D8D8
+    }
+    .tb-line span{
+        display: inline-block;
+    }
+    .tb-name{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .tb-title{
+        color: #357ac5;
+        border-left: 1px solid #357ac5;
+        padding-left: 5px;
+        font-size: 14px;
+        margin-left: 6px;
 
-.tb{
-    float:left;
-    padding: 15px;
-    width: 266px;
-    background-color: #fbf9fa;
-    margin: 5px 12px;
-    height: 400px;
-}
-.tb-head{
-    overflow: hidden
-}
-.tb-head img{
-    width: 266px;
-    height: 177px;
-}
-.tb-line{
-    padding: 17px 0;
-    border-bottom: 1px solid #D8D8D8
-}
-.tb-line span{
-    display: inline-block;
-}
-.tb-name{
-    font-weight: bold;
-    font-size: 16px;
-}
-.tb-title{
-    color: #357ac5;
-    border-left: 1px solid #357ac5;
-    padding-left: 5px;
-    font-size: 14px;
-    margin-left: 6px;
+    }
+    .tb-p{
+        text-indent: 2em;
+        color: #626262;
+        margin-top: 19px;
+        font-size: 12px;
+        padding: 0 3px;
+        margin-bottom: 12px;
+        height: 153px;
+        overflow: hidden;
+        text-align: justify
 
-}
-.tb-p{
-    text-indent: 2em;
-    color: #626262;
-    margin-top: 19px;
-    font-size: 12px;
-    padding: 0 3px;
-    margin-bottom: 12px;
-    height: 153px;
-    overflow: hidden;
-    text-align: justify
-
-}
-.current-body{
-    padding: 10px 15px;
-    overflow: hidden;
-}
-.current-body a{
-    text-decoration: none;
-    color: black;
+    }
+    .current-body{
+        padding: 10px 15px;
+        overflow: hidden;
+    }
+    .current-body a{
+        text-decoration: none;
+        color: black;
+    }
 }
