@@ -1,0 +1,67 @@
+.btn_edit, .btn_create, .btn_delete, .btn_all_delete{
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+}
+.btn_edit, .btn_create{
+    background-color: #3498db;
+}
+.btn_edit:hover, .btn_create:hover{
+    background-color: #2986cc;
+}
+.btn_edit{
+    float: left;
+    width: 36px;
+    margin-left: 10px;
+}
+.btn_delete{
+    float: right;
+    width: 36px;
+    margin-right: 10px;
+}
+.btn_delete, .btn_all_delete{
+    background-color: #f44336;
+}
+.btn_delete:hover, .btn_all_delete:hover{
+    background-color: #df2525;
+}
+.btn_create{
+    float: right;
+    width: 72px;
+    margin-right: 10px;
+}
+.btn_all_delete{
+    float: left;
+    width: 48px;
+    margin-left: 10px;
+}
+
+a{text-decoration:none;}
+
+.table{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+.table td, .table th{
+    padding: 6px;
+    line-height: 1.4;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.table thead th{
+    padding: 8px 20px;
+}
+.table thead th:last-child{
+    padding: 8px 80px;
+}
+.table tbody tr:hover{
+    background-color: #f5f5f5 !important;
+}
+
+input[type="checkbox"]{
+    box-sizing: border-box;
+    padding: 0;
+}
