@@ -78,6 +78,21 @@ $(document).ready(function(){
             return false;
         }
     });
+    function input_val(){
+		var now = new Date();
+		var day = ("0" + now.getDate()).slice(-2);//格式化日，如果小于9，前面补0
+		var month = ("0" + (now.getMonth() + 1)).slice(-2);//格式化月，如果小于9，前面补0
+		var today = now.getFullYear()+"-"+(month)+"-"+(day);//拼装完整日期格式
+		//对注册页赋值
+        $("#account").val("admin");
+        $("#psw1").val("123456");
+        $("#psw2").val("123456");
+        $("#phone").val("12345678900");
+        $("input:radio:last").attr("checked", "true");
+        $("input:checkbox").slice(0,3).attr("checked", "true");
+		$("#birthday").val(today);
+	}
+    input_val();
 });	
         // $.cookie('psw', psw1, { expires: 7 });  // 创建cookie, 7天后过期
         // psw=$.cookie('psw');     // 读取cookie

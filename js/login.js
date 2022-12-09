@@ -27,4 +27,10 @@ $(document).ready(function(){
             return false;
         }
     });
+    function input_val(){
+		//对注册页赋值
+        $("#account").val('admin');
+        $("#psw").val('123456');
+	}
+    input_val();
 });	
