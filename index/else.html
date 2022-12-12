@@ -12,7 +12,9 @@
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/font.css">
     <link rel="stylesheet" type="text/css" href="../css/popup.css">
-    <script src="../js/popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/tpl.css">
+    <script type="text/javascript" src="../js/popup.js"></script>
+    <script type="text/javascript" src="../js/zsgc.js"></script>
     
     <body>
         <div class="top" style="background-color: var(--qunqing);">
@@ -41,6 +43,20 @@
                 </div>
                 <div class="current-body">
 
+                    <a id="pop_btn">
+                    <div class="tb">
+                        <div class="tb-head">
+                            <img src="../image/zsgc.jpg">
+                        </div>
+                        <h2 style="text-align: center;">点击增删改查</h2>
+                        <div class="tb-line">
+                            <span class="tb-name">NULL</span>
+                            <span class="tb-title">NULL NULL NULL</span>
+                        </div>
+                        <div class="tb-p">
+                            可以新建，修改，删除以及选中删除，自动排序，弹窗内新增与删除同步到此页面，修改名字暂时不同步，没有保存到本地</div>
+                    </div></a>
+
                     <a href="./male/cyb.html">
                     <div class="tb">
                         <div class="tb-head">
@@ -53,34 +69,65 @@
                         <div class="tb-p">
                             幽默风趣，温柔绅士，情深意重，缅怀过去，送你离开~千里之外~</div>
                     </div></a>
-                
-                    <a id="pop_btn">
-                    <div class="tb">
-                        <p>点击增删改查</p>
-                    </div></a>
 
-                    <div class="bg"></div>
-                    <div id="pop_up" class="popup">
-                        <div class="popup-content">
-                            <div class="popup-header">
-                                <span class="close">&times;</span>
-                                <h3>弹窗头部</h3>
-                            </div>
-                            <div class="popup-body">
-                                
-                            </div>
-
-                            <div class="popup-footer">
-                                <h3>弹窗底部</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        </div>
+                </div><!--current-body-->
+            </div><!--content-->
+        </div><!--middle-->
         <div class="bottom"></div>
-    </body>
-    <script>
 
-    </script>
+        <!-- 增删改查弹窗 -->
+        <div class="bg"></div>
+        <div id="pop_up" class="popup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <span class="close">&times;</span>
+                    <h3>增删改查</h3>
+                </div>
+                <div class="popup-body">
+                    <table class="table" style="margin: 0 auto;">
+                        <caption><h1>嘉宾列表</h1></caption>
+                        <thead>
+                        <tr>
+                            <th>选中</th>
+                            <th>编号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>创建日期</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>  
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="num">1</td>
+                            <td class="name">陈渊博</td>
+                            <td class="sex">男</td>
+                            <td class="date">2022/12/11</td>
+                            <td class="control">
+                                <a><div class="btn_edit" onclick="edit(this)">修改</div></a>
+                                <a><div class="btn_delete" onclick="del(this)">删除</div></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="6" style="text-align: left;">
+                                <a><div class="btn_all_delete" onclick="all_del()">删除选中</div></a>
+                                <input type="text" id="name" placeholder="请输入姓名" style="height: 40px; width: 180px; margin-left: 32px;">
+                                <input id="sex1" name="sex" type="radio" value="男" style="margin-left:20px;" checked>男
+                                <input id="sex2" name="sex" type="radio" value="女" style="margin-left:5px;">女
+                                <a><div class="btn_create" style="text-align: center;">新建</div></a>
+                            </td>
+                        </tr>
+                        </tfoot>
+                        
+                        </table>
+                </div>
+                    
+                <div class="popup-footer">
+                    <h3><a href="../test.html">动态模板增删改查(修改困难难以胜任)</a></h3>
+                </div>
+            </div><!--popup-content-->
+        </div><!--popup-->
+    </body>
 </html>
