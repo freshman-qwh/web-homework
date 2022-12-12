@@ -72,7 +72,7 @@ $(document).ready(function(){
     });
     $("#register_btn").click(function(){
         if($("#registerForm").valid()){
-             $("#registerForm").submit();
+            $("#registerForm").submit();
         }
         else{
             return false;
