@@ -1,4 +1,4 @@
-.btn_edit, .btn_create, .btn_delete, .btn_all_delete{
+.btn_edit, .btn_create, .btn_confirm, .btn_delete, .btn_all_delete{
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
     border-radius: 10px;
@@ -6,13 +6,13 @@
     font-size: 18px;
     padding: 10px 20px 10px 20px;
 }
-.btn_edit, .btn_create{
+.btn_edit, .btn_create, .btn_confirm{
     background-color: #3498db;
 }
-.btn_edit:hover, .btn_create:hover{
+.btn_edit:hover, .btn_create:hover, .btn_confirm{
     background-color: #2986cc;
 }
-.btn_edit{
+.btn_edit, .btn_confirm{
     float: left;
     width: 36px;
     margin-left: 10px;
@@ -30,12 +30,12 @@
 }
 .btn_create{
     float: right;
-    width: 72px;
+    width: 48px;
     margin-right: 10px;
 }
 .btn_all_delete{
     float: left;
-    width: 48px;
+    width: 72px;
     margin-left: 10px;
 }
 
@@ -50,6 +50,7 @@ a{text-decoration:none;}
     line-height: 1.4;
     border: 1px solid #ddd;
     text-align: center;
+    font-weight: 500;
 }
 .table thead th{
     padding: 8px 20px;
@@ -62,6 +63,7 @@ a{text-decoration:none;}
 }
 
 input[type="checkbox"]{
+    font-size: 16px;
     box-sizing: border-box;
     padding: 0;
 }

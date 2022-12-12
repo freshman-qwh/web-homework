@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-@media screen and (min-width:800px){
+@media screen and (min-width:100px){
     /*整体布局*/
     .top,.bottom{
         width: 100%;
