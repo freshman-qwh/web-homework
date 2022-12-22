@@ -1,17 +1,105 @@
 <!DOCTYPE html>
 <html>
-
     <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>关于我们</title>>
+	    <title>使用说明</title>
     </head>
-   
+    <style>
+        a{text-decoration:none}
+        #author{
+
+            font-weight: bold;
+        }
+        #clock{
+            font-size: large;
+            font-weight: bold;
+            color: red;
+            height: 40px;
+        }
+        #sea{
+            width: 100px;
+            height: 60px;
+            background-color: blue;
+            color: white;
+        }
+        #shuiyin{
+            position: fixed;
+            top: 5%;
+            left: 90%;
+        }
+    </style>
     <body>
-        <a style="text-decoration:none" href="main.html">&lt返回</a>
-        <div style="font-size:60px; font-weight: 900;"><p>正在施工中.....</p></div>
-        <div style="font-size:60px; font-weight: 900;"><a href="../progress.txt">施工进程</a></div>
-        <a href="message.html">个人简历(由markdown文件生成)</a>
-        <a href="v50.html">支持作者</a>
+        <a href="main.html">&lt返回</a>
+        <div id="shuiyin">
+            <div id="author">钱文豪20184405</div>
+            <div id="clock"></div>
+            <div id="sea"></div>
+        </div>
+        <ul>
+            <li>
+                <h2>关于网页</h2>
+                <p>这是一个相亲交友网站，欢迎大家联系作者报名，</p>
+                <p>旨在帮助大家解决想谈恋爱或者交朋友却没人选的情况，希望大家能够对生活报以期待与珍惜当下的美好。</p>
+            </li>
+            <li>
+                <h2>关于登录注册</h2>
+                <p>使用了cookie和本地存储</p>
+                <p>自认为引导还是到位的，无论如何都会让你先注册再登录（存在一点bug可以被绕过）</p>
+                <p style="font-weight: bold;">注册页面虽然提前赋值，但是表单验证做在这页上了，除了账号密码，别的可以修改试试检测</p>
+                <p>登陆完可以返回首页再试试登录，会有检测</p>
+            </li>
+            <li>
+                <h2>关于嘉宾列表</h2>
+                <p>登陆后自动跳转嘉宾列表</p>
+                <p>展示了男嘉宾女嘉宾和增删改查</p>
+                <p>男嘉宾前三人可以点击跳转详细个人介绍，基于grid布局，有点丑可惜没时间美化</p>
+            </li>
+            <li>
+                <h2>关于增删改查</h2>
+                <p>点击增删改查会有弹窗动画</p>
+                <p style="font-weight: bold;">弹窗中进行具体的增删改查，有提前赋值</p>
+                <p>遗憾是没做表单检测，字段有点少，不会换页所以记录添加有点少，没有实现本地存储数据，刷新会消失</p>
+            </li>
+            <li>
+                <h2>其他补充：</h2>
+                <p>（1）大部分代码都是自己菜鸟教程看简单例子自学的，所以可能比较冗长</p>
+                <p>（2）大部分css都是百分比效果，主页和详情页有窗口自适应，效果一般</p>
+                <p>（3）使用了jquery的cookie和validate，没有别的了</p>
+                <p>（4）充值界面仅供娱乐，用了vue，不在成绩成果内</p>
+                <p>（5）感觉做这个跟打怪升级一样挺好玩的，后面太难有点打不过了</p>
+                <p style="font-weight: bold;">（6）有些东西会但是没加，网站不需要，比如右上角这个水印</p>
+            </li>
+            <li>
+                <p id="progress" style="font-weight: bold;">施工中.....</p>
+                <p><a href="../progress.txt">施工进程</a></p>
+                <p><a href="v50.html">支持作者</a></p>
+                <code>printf("Hello World！")</code>
+            </li>
+        </ul>
     </body>
+    <script>
+        var bubble = "";
+        function clock(){
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("clock").innerText = t;
+            if(bubble.length < 5){
+                bubble = bubble + "。";
+            }
+            else {
+                bubble = ""
+            }
+            document.getElementById("sea").innerText = bubble;
+        }
+        setInterval("clock()", 1000);
+        document.getElementById("shuiyin").onmouseover = function(){
+            var rand = Math.floor(Math.random()*80);
+            document.getElementById("shuiyin").style.top = rand +"%";
+        };
+        document.getElementById("shuiyin").onclick = function(){
+            alert("你居然抓住了它，送你个小彩蛋：作者现在是单身。。。哈。。哈哈哈。哈哈。。。。。（沉默）");
+            document.getElementById("progress").innerHTML = "<p style='font-weight: bold; color: red;'>期末结课不玩啦！</p>";
+        };
+    </script>
 </html>
