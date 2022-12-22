@@ -72,7 +72,9 @@ $(document).ready(function(){
     });
     $("#register_btn").click(function(){
         if($("#registerForm").valid()){
-            $("#registerForm").submit();
+            //$("#registerForm").submit();
+            storage_val();
+            setInterval(auto_skip, 1000);
         }
         else{
             return false;
@@ -91,10 +93,24 @@ $(document).ready(function(){
         $("input:radio:last").attr("checked", "true");
         $("input:checkbox").slice(0,3).attr("checked", "true");
 		$("#birthday").val(today);
-	}
+    }
     input_val();
+    //本地存储注册信息
+    function storage_val(){
+        var s_account = document.getElementById("account").value;  //等价于$("#account").val();
+        var s_psw = document.getElementById("psw2").value;
+        localStorage.setItem(s_account, s_psw);
+    }
+    var counter = 1;
+    function auto_skip(){
+        $(".top").empty();
+        $(".top").css("color","red");
+        if (counter <= 0){
+            location.href = "login.html";
+        }
+        else {
+            $(".top").append("网页将在 " + counter + " 秒后自动跳转");
+            counter--;
+        }
+    }
 });	
-        // $.cookie('psw', psw1, { expires: 7 });  // 创建cookie, 7天后过期
-        // psw=$.cookie('psw');     // 读取cookie
-        // console.log("psw=" + psw);
-        // //$.removeCookie('name');		// 删除cookie
