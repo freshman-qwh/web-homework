@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-@media screen and (min-width:100px){
+@media screen and (min-width:530px){
     /*整体布局*/
     .top,.bottom{
         width: 100%;
@@ -100,6 +100,110 @@
     }
     .current-body{
         padding: 10px 15px;
+        overflow: hidden;
+    }
+    .current-body a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width:530px){
+    /*整体布局*/
+    .top,.bottom{
+        width: 100%;
+        height: 75px;
+    }
+    .top{
+        background-color: #cc354c;
+    }
+    .bottom{
+        background-color: #393c42;
+    }
+    .middle{
+        width: 100%;
+        height:auto;
+    }
+    .thetitle{
+        width: 100%;
+        height: 50px;
+    }
+
+
+    /*列表布局*/
+    .content{
+        width: 66%;
+        margin: 25px auto;
+        background: #eee;
+        position: relative;
+    }
+
+    .title-bar{
+        height: 40px;
+        background: #1a69e8;
+        position: relative;
+    }
+    .title-name, .title-type{
+        position: absolute;
+        left: 12px;
+        color: white
+    }
+    .title-name{
+        top: 6px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .title-type{
+        top: 20px;
+        font-size: 6px;
+    }
+
+    .tb{
+        float:left;
+        padding: 7px;
+        width: 133px;
+        background-color: #fbf9fa;
+        margin: 2px 6px;
+        height: 210px;
+    }
+    .tb-head{
+        overflow: hidden
+    }
+    .tb-head img{
+        width: 133px;
+        height: 80px;
+    }
+    .tb-line{
+        border-bottom: 1px solid #D8D8D8
+    }
+    .tb-line span{
+        display: inline-block;
+    }
+    .tb-name{
+        font-weight: bold;
+        font-size: 6px;
+    }
+    .tb-title{
+        color: #357ac5;
+        border-left: 1px solid #357ac5;
+        padding-left: 2px;
+        font-size: 5px;
+        margin-left: 3px;
+
+    }
+    .tb-p{
+        text-indent: 2em;
+        color: #626262;
+        font-size: 5px;
+        padding: 0 1px;
+        margin-bottom: 6px;
+        height: 76px;
+        overflow: hidden;
+        text-align: justify
+
+    }
+    .current-body{
+        padding: 5px 7px;
         overflow: hidden;
     }
     .current-body a{

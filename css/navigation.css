@@ -14,46 +14,92 @@
 	margin: 0;
 	padding: 0;
 }
-.navigation{
-    width: 100%;
-    height: 50px;
+@media screen and (min-width:530px){
+    .navigation{
+        width: 100%;
+        height: 50px;
+    }
+    nav{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        background-color: #054f74;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }
+    nav a{
+        position: relative;
+        display: block;
+        float: left;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 50px;
+        width: 200px;
+        height: 50px;
+        color: white;
+        text-transform: uppercase; /*字母大写*/
+        text-decoration: none;
+        text-align: center;
+        z-index: 10;
+    }
+    nav a{
+        width: 25%;
+    }
+    nav .animation{
+        position: absolute;
+        height: 100%;
+        width: 25%;
+        background-color: #F97F51;
+        z-index: 9;
+        border-radius: 8px; /*圆角*/
+        transition: all 0.3s; /*滑动效果*/
+    }
 }
-nav{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 50px;
-    background-color: #054f74;
-    border-radius: 8px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
+@media screen and (max-width:530px){
+    .navigation{
+        width: 100%;
+        height: 25px;
+    }
+    nav{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 25px;
+        background-color: #054f74;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }
+    nav a{
+        position: relative;
+        display: block;
+        float: left;
+        font-size: 10px;
+        font-weight: 250;
+        line-height: 25px;
+        width: 100px;
+        height: 25px;
+        color: white;
+        text-transform: uppercase; /*字母大写*/
+        text-decoration: none;
+        text-align: center;
+        z-index: 10;
+    }
+    nav a{
+        width: 25%;
+    }
+    nav .animation{
+        position: absolute;
+        height: 100%;
+        width: 25%;
+        background-color: #F97F51;
+        z-index: 9;
+        border-radius: 4px; /*圆角*/
+        transition: all 0.3s; /*滑动效果*/
+    }
 }
-nav a{
-    position: relative;
-    display: block;
-    float: left;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 50px;
-    width: 200px;
-    height: 50px;
-    color: white;
-    text-transform: uppercase; /*字母大写*/
-    text-decoration: none;
-    text-align: center;
-    z-index: 10;
-}
-nav a{
-    width: 25%;
-}
-nav .animation{
-    position: absolute;
-    height: 100%;
-    width: 25%;
-    background-color: #F97F51;
-    z-index: 9;
-    border-radius: 8px; /*圆角*/
-    transition: all 0.3s; /*滑动效果*/
-}
+
 .start-main,
 nav a:nth-child(1):hover~.animation{
     width: 25%;

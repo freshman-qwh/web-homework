@@ -98,7 +98,7 @@
     margin: 55px auto 0 auto;
     box-shadow: 2px 2px 2px black;
 }
-/*提醒去注册*/
+/*提醒去注册与自动跳转提醒*/
 #tip{
     width: 260px;
     font-size: small;

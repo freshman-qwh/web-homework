@@ -29,10 +29,21 @@
     url('../font/smileyfont/SmileySans-Oblique.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('../font/smileyfont/SmileySans-Oblique.otf') format('svg'); /* iOS 4.1- */
 }
-.smiley-font {
-    font-family: "smileyfont" !important;
-    font-size: 60px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@media screen and (min-width:530px){
+    .smiley-font {
+        font-family: "smileyfont" !important;
+        font-size: 60px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+@media screen and (max-width:530px){
+    .smiley-font {
+        font-family: "smileyfont" !important;
+        font-size: 30px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }
