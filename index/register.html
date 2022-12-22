@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 		<script src="https://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 		<script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
 		<script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
 	    <title>注册页面</title>
@@ -141,7 +141,7 @@
 							</tr>
 						</table>
 					</form>
-					<a href="login.html">
+					<a href="#">
 						<div id="register_btn">注册</div>
 					</a>
 				</div>
@@ -153,37 +153,5 @@
 		</div>
 		</div>	
 	</body>
-	<script>
-		// $(document).ready(function(){
-		// 	if(window.localStorage.userArr){//判断是否存在
-		// 		var array = JSON.parse(window.localStorage.userArr);
-		// 	}
-		// 	else{
-		// 		array = [];//创建一个新数组
-		// 	}
-		// 	$("#register_btn").click(function(){
-		// 		if($("#registerForm").valid()){
-		// 			var account = $("#account").val();
-		// 			var password = $("#psw1").val();
-		// 			for(var i = 0; i < array.length; i++){
-		// 				//判断是否有相同账号
-		// 				if(account == array[i].username){
-		// 					alert("该账号已存在");
-		// 					return;
-		// 				}
-		// 			}
-		// 			//创建对象
-		// 			var obj = {username:username,password:password,score:0}
-		// 			array.push(obj);
-		// 			window.localStorage.userArr=JSON.stringify(array);
-		// 			alert("用户创建成功")
-		// 			// $.cookie('psw', psw1, { expires: 7 });  // 创建cookie, 7天后过期
-		// 			// psw=$.cookie('psw');     // 读取cookie
-		// 			// console.log("psw=" + psw);
-		// 			//$.removeCookie('name');		// 删除cookie
-		// 		}
-		// 	});
-		// });
-	</script>
 
 </html>
