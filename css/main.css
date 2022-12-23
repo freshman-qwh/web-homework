@@ -2,37 +2,47 @@
     margin: 0;
     padding: 0;
 }
-@media screen and (min-width:100px){
-    body{
-        position: relative;
-        height: 1200px;
-    }
-    #box1:before{               /*使用before 选择器在被选元素的内容前面插入内容。*/
-        width: 100%;
-        height: 100%;           /*设置为全屏背景模式*/
-        background-image: url(../image/love.jpg);
-        background-size: 100% 100%  ;
-        background-attachment: fixed;      /*将图片固定*/
-        position: fixed;                 /*图片定位*/
-        top: 0;
-        left: 0;
-        content: "";
-        z-index: -1;                    /*设置该标签等级，让其始终位于最上层*/
-        -webkit-filter: opacity(50%);   /*设置透明度   blur还可以改变照片的模糊度*/
-        filter: opacity(50%);
-    }
-    .box2{
+body{
+    position: relative;
+    height: 1200px;
+}
+#box1:before{               /*使用before 选择器在被选元素的内容前面插入内容。*/
+    width: 100%;
+    height: 100%;           /*设置为全屏背景模式*/
+    background-image: url(../image/love.jpg);
+    background-size: 100% 100%  ;
+    background-attachment: fixed;      /*将图片固定*/
+    position: fixed;                 /*图片定位*/
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;                    /*设置该标签等级，让其始终位于最上层*/
+    -webkit-filter: opacity(50%);   /*设置透明度   blur还可以改变照片的模糊度*/
+    filter: opacity(50%);
+}
+.box2{
 
-    }
+}
 
-    .top,.bottom{
-        width: 100%;
-        height: 150px;
-    }
-    .middle{
-        width: 100%;
-        height: 900px;
-    }
+.top,.bottom{
+    width: 100%;
+    height: 150px;
+}
+.middle{
+    width: 100%;
+    height: 900px;
+}
+.thetitle{
+    height: 100px;
+    width: 100%;
+}
+.tittle{
+    margin-left: 20%;
+    width: 60%;
+    height: 100px;
+    float: left;
+}
+@media screen and (min-width:530px){
     .left,.right{
         width: 200px;
         height: 100%;
@@ -43,23 +53,39 @@
         height: 100%;
         float: left;
     }
-    .thetitle{
-        height: 100px;
-        width: 100%;
-    }
-    .tittle{
-        margin-left: 20%;
-        width: 60%;
-        height: 100px;
-        float: left;
-    }
     .music{
         width: 20%;
         height: 60px;
         float: left;
         margin-top: 20px;
     }
+    .couple{
+        width: 200px;
+    }
+    #poem{
+        text-align: center;
+        font-size: medium;
+    }
 }
-@media screen and (max-width:480px){
-    
+@media screen and (max-width:530px){
+    .left,.right{
+        width: 80px;
+        height: 100%;
+        float: left;
+    }
+    .center{
+        width: calc(100% - 160px);
+        height: 100%;
+        float: left;
+    }
+    .music{
+        display: none;
+    }
+    .couple{
+        width: 80px;
+    }
+    #poem{
+        text-align: center;
+        font-size: smaller;
+    }
 }
